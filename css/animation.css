@@ -1,0 +1,130 @@
+.hero .block{
+    position: absolute;
+    width:50px;
+    height: 100px;
+    background:#e80202;
+    box-shadow: 10px 10px 50px rgba(0.5,0.5,0.5,0.5);
+}
+.hero h2{
+    font-family: 'Roboto',sans-serif;
+    color:#fff;
+    text-align:center;
+    font-size: 12vw;
+    line-height: 1em;
+    z-index:1000;
+    font-weight: 900;
+    animation: FadeIn 12s ;
+    
+    transition-timing-function: linear;
+}
+.hero h2 span{
+    font-size:0.2em;
+    letter-spacing: 0.4em;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+@keyframes FadeIn {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes FadeIn {
+    0% {
+        opacity: 0;
+    }
+    
+    25% {
+        opacity: 0;
+    }
+    
+    50% {
+        opacity: 0;
+    }
+    
+    75% {
+        opacity: 0.5;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes FadeIn {
+0% {
+    opacity: 0;
+}
+
+25% {
+    opacity: 0;
+}
+
+50% {
+    opacity: 0;
+}
+
+75% {
+    opacity: 0.5;
+}
+
+100% {
+    opacity: 1;
+}
+}
+
+@-o-keyframes FadeIn {
+    0% {
+        opacity: 0;
+    }
+    
+    25% {
+        opacity: 0;
+    }
+    
+    50% {
+        opacity: 0;
+    }
+    
+    75% {
+        opacity: 0.5;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes FadeIn {
+    0% {
+        opacity: 0;
+    }
+    
+    25% {
+        opacity: 0;
+    }
+    
+    50% {
+        opacity: 0;
+    }
+    
+    75% {
+        opacity: 0.5;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}
