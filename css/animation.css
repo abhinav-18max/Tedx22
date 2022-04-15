@@ -128,3 +128,111 @@
         opacity: 1;
     }
 }
+/******Speakers*****/
+#speakers .container {
+  height: 100vh;
+  width: 100vw;
+  max-height: 800px;
+  max-width: 1280px;
+  min-height: 600px;
+  min-width: 1000px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+#speakers .border {
+  height: 369px;
+  width: 290px;
+  background: transparent;
+  border-radius: 10px;
+  transition: border 1s;
+  position: relative;
+  border: 0px solid #e80202 !important;
+}
+#speakers .border:hover {
+  border: 1px solid #e80202 !important;
+}
+#speakers .card {
+  height: 379px;
+  width: 300px;
+  background: #e80202;
+  border-radius: 10px;
+  transition: background 0.8s;
+  overflow: hidden;
+  background: #000;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#speakers .card:hover{
+    box-shadow: 0 70px 63px -60px #000;
+}
+#speakers .card0 {
+  background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg") center center no-repeat;
+  background-size: 300px;
+}
+#speakers .card0:hover {
+  background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg") left center no-repeat;
+  background-size: 600px;
+}
+#speakers .card0:hover h2 {
+  opacity: 1;
+}
+#speakers .card0:hover .fa {
+  opacity: 1;
+}
+#speakers .card1 {
+  background: url("https://i.pinimg.com/originals/28/d2/e6/28d2e684e7859a0dd17fbd0cea00f8a9.jpg") center center no-repeat;
+  background-size: 300px;
+}
+#speakers .card1:hover {
+  background: url("https://i.pinimg.com/originals/28/d2/e6/28d2e684e7859a0dd17fbd0cea00f8a9.jpg") left center no-repeat;
+  background-size: 600px;
+}
+#speakers .card1:hover h2 {
+  opacity: 1;
+}
+#speakers .card1:hover .fa {
+  opacity: 1;
+}
+#speakers .card2 {
+  background: url("https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg") center center no-repeat;
+  background-size: 300px;
+}
+#speakers .card2:hover {
+  background: url("https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg") left center no-repeat;
+  background-size: 600px;
+}
+#speakers .card2:hover h2 {
+  opacity: 1;
+}
+#speakers .card2:hover .fa {
+  opacity: 1;
+}
+#speakers h2 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #e80202;
+  font-weight: bolder;
+  margin: 20px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+#speakers .fa {
+  opacity: 0;
+  transition: opacity 1s;
+}
+#speakers .icons {
+  position: absolute;
+  fill: #e80202;
+  color: #e80202;
+  height: 130px;
+  top: 226px;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
