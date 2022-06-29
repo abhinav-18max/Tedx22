@@ -131,6 +131,9 @@
 /*--------------------------------------------------------------
 # speaker Section
 --------------------------------------------------------------*/
+.speaker .speaker-member{
+    padding: 0.5rem;
+}
 .speaker .speaker-member .member-img {
   border-radius: 8px;
   overflow: hidden;
