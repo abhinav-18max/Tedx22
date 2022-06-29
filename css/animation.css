@@ -128,111 +128,79 @@
         opacity: 1;
     }
 }
-/******Speakers*****/
-#speakers .container {
-  height: 100vh;
-  width: 100vw;
-  max-height: 800px;
-  max-width: 1280px;
-  min-height: 600px;
-  min-width: 1000px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 0 auto;
-}
-#speakers .border {
-  height: 369px;
-  width: 290px;
-  background: transparent;
-  border-radius: 10px;
-  transition: border 1s;
-  position: relative;
-  border: 0px solid #e80202 !important;
-}
-#speakers .border:hover {
-  border: 1px solid #e80202 !important;
-}
-#speakers .card {
-  height: 379px;
-  width: 300px;
-  background: #e80202;
-  border-radius: 10px;
-  transition: background 0.8s;
+/*--------------------------------------------------------------
+# speaker Section
+--------------------------------------------------------------*/
+.speaker .speaker-member .member-img {
+  border-radius: 8px;
   overflow: hidden;
-  background: #000;
-  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
 }
-#speakers .card:hover{
-    box-shadow: 0 70px 63px -60px #000;
+.speaker .speaker-member:hover .member-img {
+  transform: scale(0.5);
 }
-#speakers .card0 {
-  background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg") center center no-repeat;
-  background-size: 300px;
-}
-#speakers .card0:hover {
-  background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg") left center no-repeat;
-  background-size: 600px;
-}
-#speakers .card0:hover h2 {
-  opacity: 1;
-}
-#speakers .card0:hover .fa {
-  opacity: 1;
-}
-#speakers .card1 {
-  background: url("https://i.pinimg.com/originals/28/d2/e6/28d2e684e7859a0dd17fbd0cea00f8a9.jpg") center center no-repeat;
-  background-size: 300px;
-}
-#speakers .card1:hover {
-  background: url("https://i.pinimg.com/originals/28/d2/e6/28d2e684e7859a0dd17fbd0cea00f8a9.jpg") left center no-repeat;
-  background-size: 600px;
-}
-#speakers .card1:hover h2 {
-  opacity: 1;
-}
-#speakers .card1:hover .fa {
-  opacity: 1;
-}
-#speakers .card2 {
-  background: url("https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg") center center no-repeat;
-  background-size: 300px;
-}
-#speakers .card2:hover {
-  background: url("https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg") left center no-repeat;
-  background-size: 600px;
-}
-#speakers .card2:hover h2 {
-  opacity: 1;
-}
-#speakers .card2:hover .fa {
-  opacity: 1;
-}
-#speakers h2 {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #e80202;
-  font-weight: bolder;
-  margin: 20px;
-  opacity: 0;
-  transition: opacity 1s;
-}
-#speakers .fa {
-  opacity: 0;
-  transition: opacity 1s;
-}
-#speakers .icons {
+.speaker .speaker-member .social {
   position: absolute;
-  fill: #e80202;
-  color: #e80202;
-  height: 130px;
-  top: 226px;
-  width: 50px;
+  left: 0;
+  top: -18px;
+  right: 0;
+  opacity: 0;
+  transition: ease-in-out 0.3s;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+}
+.speaker .speaker-member .social a {
+  transition: color 0.3s;
+  color: var(--color-white);
+  background: white;
+  margin: 0 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.speaker .speaker-member .social a i {
+  line-height: 0;
+  font-size: 16px;
+}
+.speaker .speaker-member .social a:hover {
+  background: #e80202;
+  text-decoration: none;
+}
+.speaker .speaker-member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+.speaker .speaker-member .member-info {
+  padding: 30px 15px;
+  text-align: center;
+  box-shadow: 0px 2px 15px rgba(var(--color-black-rgb), 0.1);
+  background: white;
+  margin: -50px 20px 0 20px;
+  position: relative;
+  border-radius: 8px;
+}
+.speaker .speaker-member .member-info h4 {
+  font-weight: 400;
+  margin-bottom: 5px;
+  font-size: 24px;
+  color: #e80202;
+}
+.speaker .speaker-member .member-info span {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-gray);
+}
+.speaker .speaker-member .member-info p {
+  font-style: italic;
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--color-gray);
+}
+.speaker .speaker-member:hover .social {
+  opacity: 1;
 }
