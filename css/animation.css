@@ -131,6 +131,10 @@
 /*--------------------------------------------------------------
 # speaker Section
 --------------------------------------------------------------*/
+.speaker .row{
+    display: flex;
+    justify-content: space-around;
+}
 .speaker .speaker-member{
     padding: 0.5rem;
 }
@@ -139,7 +143,7 @@
   overflow: hidden;
 }
 .speaker .speaker-member:hover .member-img {
-  transform: scale(0.75);
+  transform: scale(1.05);
 }
 .speaker .speaker-member .social {
   position: absolute;
