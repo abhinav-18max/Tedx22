@@ -38,7 +38,7 @@ body{
         opacity: 0;
     }
     75% {
-        opacity: 0.5;
+        opacity: 1;
     }
     100% {
         opacity: 1;
@@ -59,7 +59,7 @@ body{
     }
     
     75% {
-        opacity: 0.5;
+        opacity: 1;
     }
     
     100% {
@@ -81,7 +81,7 @@ body{
 }
 
 75% {
-    opacity: 0.5;
+    opacity: 1;
 }
 
 100% {
@@ -103,7 +103,7 @@ body{
     }
     
     75% {
-        opacity: 0.5;
+        opacity: 1;
     }
     
     100% {
@@ -125,7 +125,7 @@ body{
     }
     
     75% {
-        opacity: 0.5;
+        opacity: 1;
     }
     
     100% {
@@ -243,138 +243,63 @@ body{
   background-color: #f7f5ec;
 }
 
-
-.pro-heading{
-display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Codystar';
-    background: black;
+* {
+    margin: 0;
+    scroll-behavior: smooth;
 }
 
-.neons {
-    /* margin-top: 10rem; */
-    text-align: center;
-}
-
-.neons h1 {
-    font-size: 9rem;
-    text-align: center;
-    font-weight: bold;
-    -webkit-animation: glow 2s ease-in-out infinite alternate;
-    -moz-animation: glow 2s ease-in-out infinite alternate;
-    animation: glow 2s ease-in-out infinite alternate;
-}
-
-@-webkit-keyframes glow {
-    from {
-        color: #fff;
-        text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 90px #00fff2;
-    }
-
-    to {
-        color: gray;
-        text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2, 0 1 90px #00fff2;
-    }
-}
-
-@media (max-width:800px) {
-    .neons h1{
-        font-size: 4rem;
-    }
-    
+::-webkit-scrollbar {
+    display: none;
 }
 .pro-events{
-    height: 100vh;
-    /* position: relative; */
+    
+    top: 0;
+    left: 0;
+    /*  note vh and vw switched  */
+    width: 100vh;
+    height: 100vw;
+    /*    */
+    transform-origin: top left;
+    transform: rotate(-90deg) translateX(-100vh);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    /*   scroll-snap-type: y mandatory; */
+}
+
+.article {
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
-    padding: 10px;
-    background-color: black;
+    width: fit-content;
+    height: fit-content;
+    transform-origin: top left;
+    transform: rotate(90deg) translateY(-100vh);
 }
 
-.pro-events .event-left{
-    background: url('../images/band.jpg')no-repeat fixed;
-    background-size: cover;
-    height: 90vh;
-    flex: 50%;
-    border-radius: 20px;
-    /* margin-right: 30px; */
-   
-    
+.hori {
+    width: 100vw;
+    height: 100vh;
+    /*   scroll-snap-align: start; */
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: monospace;
+    font-size: 3rem;
+    /*  backface visibility keeps font from looking weird  */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
-.pro-events .event-right{
-    background: url('../images/dj.jpg') no-repeat fixed;
-    background-size: cover;
-    height:90vh;
-    flex:50%;
-    border-radius: 20px;
+.hori:nth-of-type(odd) {
+    background: #731d17;
+    color: #fff;
 }
 
-
-
-@media (max-width: 800px) {
-    .pro-events {
-        flex-direction: column;
-        width: 100vw;
-        height: 200vh;
-    }
-    .event-left{
-        margin-right:0px;
-        margin-bottom: 30px;
-    }
-    
-    
-}
-@media (min-width:800px) {
-    .event-left {
-            margin-right: 10px;
-            
-        }
-    .event-right{
-        margin-left: 10px;
-
-    }    
+.hori:nth-of-type(even) {
+    background: rgb(63, 27, 27);
+    color: #fff;
 }
 
-.effect{
-    /* margin: 0; */
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        align-items: center;
-        justify-items: center;
+.navbar{
+    background-color: #e80202;
 }
- 
-.effect h1 {
-     margin: 0;
-     padding-bottom: 6rem;
-     grid-column: 1;
-     grid-row: 1;
-     z-index: 1;
-     font-family: 'Teko', sans-serif;
-     font-size: 6rem;
-     text-transform: uppercase;
-     animation: glow 2s ease-in-out infinite alternate;
-     text-align: center;
- }
-
-
- @keyframes glow {
-     from {
-         text-shadow: 0 0 20px #2d9da9;
-     }
-
-     to {
-         text-shadow: 0 0 30px #34b3c1, 0 0 10px #4dbbc7;
-     }
- }
- 
- @media (max-width:800px) {
-    .efffect h1{
-        font-size: 22rem;
-    }
-    
- }
